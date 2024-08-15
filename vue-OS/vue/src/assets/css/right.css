@@ -1,0 +1,103 @@
+/* 关注我们 */
+.right_gz {
+    position: fixed;
+    right: 0;
+    top: 21%;
+    font-size: 16px;
+    z-index: 999;
+}
+
+.right_gz ul {
+    position: relative;
+    width: 178px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0 2px 12px;
+}
+
+.right_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    min-height: 44px;
+    padding: 0 21px;
+}
+
+.right_top p:first-of-type {
+    font-size: 18px;
+    color: black;
+    margin: 18px auto 27px
+}
+
+.right_top>img {
+    width: 147px;
+    height: 147px
+}
+
+.right_top p:last-of-type {
+    color: black;
+    margin: 10px auto 20px;
+}
+
+.right_bj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 21px;
+    color: black;
+    height: 44px;
+    width: 100%;
+}
+
+.right_bj img {
+    width: 30px;
+    height: 30px;
+}
+
+.gz_2 li:hover .right_bj {
+    background: black;
+    color: white;
+}
+
+
+.gz_2 {
+    transition: all 0.7s;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+label {
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+#gz:checked~div {
+    transform: translateX(178px);
+}
+
+#gz:checked~#an1 {
+    transform: translateX(178px);
+}
+
+#gz:checked~.right_jt::after {
+    transform: rotate(180deg);
+}
+
+.right_jt {
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 52px;
+    background: #333;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: #333;
+    z-index: 999;
+}

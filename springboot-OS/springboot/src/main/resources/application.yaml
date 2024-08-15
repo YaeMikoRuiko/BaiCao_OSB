@@ -1,0 +1,35 @@
+server:
+  port: 8087
+  application:
+          name: 题库
+  tomcat:
+         uri-encoding: UTF-8
+         maxHttpHeaderSize: 100000
+         max-threads: 100000
+         min-spare-threads: 1
+
+#  ssl: #ssl配置
+#          enabled: true # 默认为true
+#    #key-alias: alias-key # 别名(可以不进行配置)
+#    # 保存SSL证书的秘钥库的路径
+#          key-store: classpath:ssl/name.jks
+#          key-password: Unicom_10010
+#    #key-store-password: 证书密码
+#          key-store-type: JKS
+#          key-store-password: Unicom_10010
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#      dv4 Abcd_1234
+    url: jdbc:mysql:///osb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 1
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+#mybatis:
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#  type-aliases-package: com/wen/pojo

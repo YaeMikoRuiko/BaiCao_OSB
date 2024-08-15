@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.tiku_text {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.tiku_h1 {
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:50%;
+    top:700px;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+.tiku_h1:before {
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 1em;
+    background: linear-gradient(0deg, #ffffff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.6;
+    text-align: center;
+    width: 100%;
+}
+
